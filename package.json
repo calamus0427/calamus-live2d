@@ -1,0 +1,23 @@
+{
+  "name": "calamus-live2d",
+  "version": "0.0.1",
+  "description": "live2d",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calamus0427/calamus-live2d.git"
+  },
+  "keywords": [
+    "calamus",
+    "live2d"
+  ],
+  "author": "calamus0427",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calamus0427/calamus-live2d/issues"
+  },
+  "homepage": "https://github.com/calamus0427/calamus-live2d#readme"
+}
