@@ -1,7 +1,7 @@
 {
     "mouseover": [{
             "selector": ".container a[href^='http']",
-            "text": ["要看看 <span style=\"color:#0099cc;\">{text}</span> 么？"]
+            "text": ["要看看 <span style=\"color:orange;\">{text}</span> 么？"]
         },
         {
             "selector": ".fui-home",
@@ -81,19 +81,19 @@
         },
         {
             "selector": "c-player div.time",
-            "text": ["在这里可以调整<span style=\"color:#0099cc;\">播放进度</span>呢"]
+            "text": ["在这里可以调整<span style=\"color:orange;\">播放进度</span>呢"]
         },
         {
             "selector": "c-player div.volume",
-            "text": ["在这里可以调整<span style=\"color:#0099cc;\">音量</span>呢"]
+            "text": ["在这里可以调整<span style=\"color:orange;\">音量</span>呢"]
         },
         {
             "selector": "c-player div.list-button",
-            "text": ["<span style=\"color:#0099cc;\">播放列表</span>里都有什么呢"]
+            "text": ["<span style=\"color:orange;\">播放列表</span>里都有什么呢"]
         },
         {
             "selector": "c-player div.lyric-button",
-            "text": ["有<span style=\"color:#0099cc;\">歌词</span>的话就能跟着一起唱呢"]
+            "text": ["有<span style=\"color:orange;\">歌词</span>的话就能跟着一起唱呢"]
         },
         {
             "selector": ".waifu #live2d",
@@ -103,5 +103,18 @@
     "click": [{
         "selector": ".waifu #live2d",
         "text": ["是…是不小心碰到了吧", "萝莉控是什么呀", "你看到我的小兔叽了吗∠( °ω°)／ ", "Hentai，再摸的话我可要报警了！⌇●﹏●⌇", "妖妖灵吗，这里有个变态一直在摸我(ó﹏ò｡)"]
+    }],
+    "seasons": [{
+        "date": "3/1-6/22",
+        "text": ["<p>もうすぐ 春が来る</p><p>君と出会った春が来る</p><p>君がいない春が来る</p>"]
+    }, {
+        "date": "6/22-9/23",
+        "text": ["这个夏天已经用光一生所有的快乐……", "今天的风儿甚是喧嚣"]
+    }, {
+        "date": "9/23-12/21",
+        "text": ["梦里不觉秋已深，余情岂是为他人"]
+    }, {
+        "date": "12/21-3/1",
+        "text": ["Winter is comming"]
     }]
 }

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="8WCoNnsDwStrGxxbAr6zXwdRFA2D1Ges_jY-JYUA2bU" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="keywords" content="梁素娅,calamus,菖蒲,天宫蒲,世界第一帅蒲,技术博客,前端开发,web前端">
+    <meta name="description" content="梁素娅 | www.calamus.xyz | 前端开发工程师 | 二次元美少女">
+    <meta name="author" content="梁素娅，calamus，蒲">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="calamus">
+    <meta property="og:url" content="https://www.calamus.xyz">
+    <meta property="og:site_name" content="calamus">
+    <meta property="og:description" content="梁素娅 | www.calamus.xyz | 前端开发工程师 | 二次元美少女">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="calamus">
+    <meta name="twitter:description" content="梁素娅 | www.calamus.xyz | 前端开发工程师 | 二次元美少女">
+    <title>Calamus</title>
+    <link rel="shortcut icon" id="cl-ico" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://www.calamus.xyz/assets/waifu.css" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            min-height: 450px;
+            font-family: 'Dosis', sans-serif;
+            font-size: 32px;
+            font-weight: 500;
+            color: #d2e1ec;
+        }
+        
+        .content {
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            background-color: #d2e1ec;
+            background: url(https://www.calamus.xyz/assets/lost.jpg) no-repeat center;
+            background-attachment: fixe;
+            background-size: cover;
+            overflow: hidden;
+        }
+        
+        .snow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 20;
+        }
+        
+        .main-text {
+            text-align: center;
+            line-height: 2em;
+            font-size: 5vh;
+        }
+        
+        @media screen and (max-width: 475px) {
+            .main-text {
+                font-size: 14px;
+            }
+        }
+        
+        .home-link {
+            font-size: 0.6em;
+            font-weight: 400;
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+            border-bottom: 1px dashed rgba(93, 115, 153, 0.5);
+        }
+        
+        .home-link:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="waifu" id="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="calamus cl-home"></span>
+            <span class="calamus cl-liaotianduihua"></span>
+            <span class="calamus cl-nvzhuangqunzi-1"></span>
+            <span class="calamus cl-nv"></span>
+            <span class="calamus cl-paizhao"></span>
+            <span class="calamus cl-weixin"></span>
+            <span class="calamus cl-github1"></span>
+            <span class="calamus cl-yincangbukejian"></span>
+        </div>
+    </div>
+    <div class="content">
+        <canvas class="snow" id="snow"></canvas>
+        <div class="main-text">
+            <h1>这里什么也没有.o(╥﹏╥)o</h1>
+            <a class="home-link" href="https://www.calamus.xyz">带我回家吧</a>
+        </div>
+    </div>
+    <script>
+        (function() {
+            function ready(fn) {
+                if (document.readyState != 'loading') {
+                    fn();
+                } else {
+                    document.addEventListener('DOMContentLoaded', fn);
+                }
+            }
+
+            function makeSnow(el) {
+                var ctx = el.getContext('2d');
+                var width = 0;
+                var height = 0;
+                var particles = [];
+
+                var Particle = function() {
+                    this.x = this.y = this.dx = this.dy = 0;
+                    this.reset();
+                }
+
+                Particle.prototype.reset = function() {
+                    this.y = Math.random() * height;
+                    this.x = Math.random() * width;
+                    this.dx = (Math.random() * 1) - 0.5;
+                    this.dy = (Math.random() * 0.5) + 0.5;
+                }
+
+                function createParticles(count) {
+                    if (count != particles.length) {
+                        particles = [];
+                        for (var i = 0; i < count; i++) {
+                            particles.push(new Particle());
+                        }
+                    }
+                }
+
+                function onResize() {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    el.width = width;
+                    el.height = height;
+
+                    createParticles((width * height) / 10000);
+                }
+
+                function updateParticles() {
+                    ctx.clearRect(0, 0, width, height);
+                    ctx.fillStyle = '#f6f9fa';
+
+                    particles.forEach(function(particle) {
+                        particle.y += particle.dy;
+                        particle.x += particle.dx;
+
+                        if (particle.y > height) {
+                            particle.y = 0;
+                        }
+
+                        if (particle.x > width) {
+                            particle.reset();
+                            particle.y = 0;
+                        }
+
+                        ctx.beginPath();
+                        ctx.arc(particle.x, particle.y, 5, 0, Math.PI * 2, false);
+                        ctx.fill();
+                    });
+
+                    window.requestAnimationFrame(updateParticles);
+                }
+
+                onResize();
+                updateParticles();
+
+                window.addEventListener('resize', onResize);
+            }
+
+            ready(function() {
+                var canvas = document.getElementById('snow');
+                makeSnow(canvas);
+            });
+        })();
+    </script>
+    <script src="https://www.calamus.xyz/assets/waifu-tips.js"></script>
+    <script src="https://www.calamus.xyz/assets/live2d.js"></script>
+    <script type="text/javascript">
+        initModel("https://www.calamus.xyz/assets/")
+    </script>
+</body>
+
+</html>
