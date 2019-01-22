@@ -1,0 +1,23 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "cell",
+    "label":"22",
+	"model": "model.moc",
+	"textures": [
+		"textures.2048/00.png"
+	],
+	"motions":{
+		"idle":[
+			{"file":"motions/Idle.mtn"}
+		],
+        "sleepy":[
+            {"file":"motions/Nemui.mtn"}
+        ],
+		"flick_head":[
+			{"file":"motions/Anone_Synced.mtn"}
+		],
+		"tap_body":[
+			{"file":"motions/Dance.mtn"}
+		]
+	}
+}
