@@ -18,18 +18,20 @@ String.prototype.render = function(context) {
         return currentObject;
     });
 };
-console.log("%c【calamus】\n%ckiz.calamus@gmail.com", "color:#E1244E;font-size:16px;text-shadow:3px 1px 2px #e1244e9e;", "color:#9e9e9e;font-size:14px")
-console.log("%c ", "background: url(http://p79mwfmry.bkt.clouddn.com/logo50.jpg) no-repeat center;padding-left:80px;padding-bottom: 80px;border-radius:50%;")
+console.log('%c      ', 'background: url(\'data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><g><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#3498db" text-shadow="0 0 1px #3498db" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-1.5s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#f39c12" text-shadow="0 0 1px #f39c12" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-3s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#e74c3c" text-shadow="0 0 1px #e74c3c" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-4.5s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#9b59b6" text-shadow="0 0 1px #9b59b6" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-6s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text></g></svg>\') left top no-repeat; font-size: 48px;')
+console.log("%c kiz.calamus@gmail.com","color:#9e9e9e;font-size:14px")
+console.log("%c ", "background: url(https://cdn.calamus.xyz/qq%E7%BE%A4.png) no-repeat center;padding-left:151px;padding-bottom: 240px;")
+console.log("%c ", "background: url(https://cdn.calamus.xyz/wechat.jpg) no-repeat center;padding-left:151px;padding-bottom: 151px;")
 console.log("%c你可以选择爱我或者不爱我\n而我\n只能选择爱你或者更爱你\n", "color:#e1244e;font-size:14px;text-shadow:3px 1px 2px #e1244e9e;")
-console.log("%c ", "background: url(http://p3i10hjs7.bkt.clouddn.com/console.jpeg) no-repeat center;padding-left:640px;padding-bottom: 242px;")
 
 var re = /x/;
 re.toString = function() {
     showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000, true);
-    console.log("%c【calamus】\n%ckiz.calamus@gmail.com", "color:#E1244E;font-size:16px;text-shadow:3px 1px 2px #e1244e9e;", "color:#9e9e9e;font-size:14px")
-    console.log("%c ", "background: url(http://p79mwfmry.bkt.clouddn.com/logo50.jpg) no-repeat center;padding-left:80px;padding-bottom: 80px;border-radius:50%;")
-    console.log("%c你可以选择爱我或者不爱我\n而我\n只能选择爱你或者更爱你\n", "color:#e1244e;font-size:14px;text-shadow:3px 1px 2px #e1244e9e;")
-    console.log("%c ", "background: url(http://p3i10hjs7.bkt.clouddn.com/console.jpeg) no-repeat center;padding-left:640px;padding-bottom: 242px;")
+    console.log('%c      ', 'background: url(\'data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><g><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#3498db" text-shadow="0 0 1px #3498db" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-1.5s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#f39c12" text-shadow="0 0 1px #f39c12" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-3s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#e74c3c" text-shadow="0 0 1px #e74c3c" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-4.5s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text><text font-size="32" text-anchor="middle" x="50%" y="50%" text-transform="uppercase" fill="none" stroke="#9b59b6" text-shadow="0 0 1px #9b59b6" stroke-width="1px" stroke-dasharray="90 310">【Calamus】<animate attributeName="stroke-dashoffset" begin="-6s" dur="6s" from="0" to="-400" repeatCount="indefinite"/></text></g></svg>\') left top no-repeat; font-size: 48px;')
+console.log("%c kiz.calamus@gmail.com","color:#9e9e9e;font-size:14px")
+console.log("%c ", "background: url(https://cdn.calamus.xyz/qq%E7%BE%A4.png) no-repeat center;padding-left:151px;padding-bottom: 240px;")
+console.log("%c ", "background: url(https://cdn.calamus.xyz/wechat.jpg) no-repeat center;padding-left:151px;padding-bottom: 151px;")
+console.log("%c你可以选择爱我或者不爱我\n而我\n只能选择爱你或者更爱你\n", "color:#e1244e;font-size:14px;text-shadow:3px 1px 2px #e1244e9e;")
     return '';
 };
 
